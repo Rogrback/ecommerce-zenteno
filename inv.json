@@ -1,0 +1,36 @@
+{
+    "aceites": [
+        {
+            "id": 1,
+            "nombre": "10w40",
+            "marca": "castrol"
+        },
+        {
+            "id": 2,
+            "nombre": "10w40",
+            "marca": "castrol"
+        },
+        {
+            "id": 3,
+            "nombre": "10w40",
+            "marca": "castrol"
+        }
+    ],
+    "filtros": [
+        {
+            "id": 4,
+            "nombre": "lf604a",
+            "marca": "lys"
+        },
+        {
+            "id": 6,
+            "nombre": "bae8131",
+            "marca": "willy busch"
+        },
+        {
+            "id": 7,
+            "nombre": "lfg56",
+            "marca": "bosch"
+        }
+    ]
+}
