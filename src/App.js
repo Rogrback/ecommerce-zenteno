@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Header } from './components/Header';
 import { Product } from './components/Product';
+import { Form } from './components/Form';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 
@@ -14,7 +15,8 @@ export const App = () => {
       <Routes>
         <Route path="/" element = { <Home /> } />
         <Route path="product/:id" element={ <DetailProduct/> } />
-      </Routes>    
+      </Routes> 
+      <Form/>   
       <Footer/>    
     </Router>
   );
