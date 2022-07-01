@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from './components/Header';
-
-import { Form } from './components/Form';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 
@@ -17,7 +15,6 @@ export const App = () => {
         <Route path="/" element = { <Home /> } />
         <Route path="product/:id" element={ <DetailProduct/> } />
       </Routes> 
-      <Form/>   
       <Footer/>    
     </Router>
   );
