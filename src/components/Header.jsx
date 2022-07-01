@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 
+
 export const Header = () => {
   return (
     <>
@@ -37,6 +38,8 @@ export const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
     </>
+
   )
 }
