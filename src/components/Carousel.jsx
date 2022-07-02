@@ -3,8 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import imagen01 from '../img/imagen1.jpg';
 import imagen02 from '../img/imagen2.jpg';
 import imagen03 from '../img/imagen3.jpg';
-import imagen04 from '../img/imagen4.jpg';
-
 import '../styles/carousel.css'
 
 export const CarouselProducts = () => {
