@@ -4,14 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
-
-
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
     <>
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg"  style={{ backgroundColor: '#1e90ff' }}>
       <Container fluid>
         <Navbar.Brand href="#">Tienda</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -21,10 +19,16 @@ export const Header = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Inicio</Nav.Link>
-            <Nav.Link href="#action2">Productos</Nav.Link>
-            <Nav.Link href="#action2">Contacto</Nav.Link>
-            
+          <Link to="/">
+            <Nav.Link href="#action1" style={{ color: 'black' }}>Inicio</Nav.Link>
+          </Link>
+          <Link to="/">
+            <Nav.Link href="#action2" style={{ color: 'black' }}>Productos</Nav.Link>
+          </Link>
+          <Link to="/">
+            <Nav.Link href="#action2" style={{ color: 'black' }}>Contacto</Nav.Link>
+          </Link>
+             
           </Nav>
           <Form className="d-flex">
             <Form.Control

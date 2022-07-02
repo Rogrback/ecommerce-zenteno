@@ -1,17 +1,15 @@
 import React from 'react'
+import { CarouselProducts } from '../components/Carousel'
 import { FormClient } from '../components/Form'
-import { Product } from '../components/Product'
+import { ListProduct } from '../components/ListProduct'
 
 
 export const Home = () => {
   return (
-    <div className="container">
-      <div className="row row justify-content-md-center">
-        <div className="col-md-4">
-          <Product />
-          <FormClient/>
-        </div>
-      </div>
-    </div>
+    <>
+      <CarouselProducts />
+      <ListProduct />
+      <FormClient />
+    </>
   )
 }
