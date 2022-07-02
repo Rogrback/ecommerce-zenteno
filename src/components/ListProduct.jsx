@@ -10,53 +10,55 @@ export const ListProduct = () => {
 
   return (
     <>
-    <Card.Title className="container text-center col-md-4 p-5">PRODUCTOS</Card.Title>
-      <div className="row justify-content-md-center p-4 gap-5">
-        <Card style={{ width: '18rem' }} className="col-6 col-md-auto">
-          <Card.Img variant="top" src={product_01} />
-          <Card.Body>
-            <Card.Title>Aceite Motul</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content ljljl.
-            </Card.Text>
-            <Button variant="primary">COMPRAR</Button>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem' }} className="col-6">
-          <Card.Img variant="top" src={product_01} />
-          <Card.Body>
-            <Card.Title>Aceite Motul</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content ljljl.
-            </Card.Text>
-            <Button variant="primary">COMPRAR</Button>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem' }} className="col-6">
-          <Card.Img variant="top" src={product_01} />
-          <Card.Body>
-            <Card.Title>Aceite Motul</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content ljljl.
-            </Card.Text>
-            <Button variant="primary">COMPRAR</Button>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem' }} className="col-6">
-          <Card.Img variant="top" src={product_01} />
-          <Card.Body>
-            <Card.Title>Aceite Motul</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content ljljl.
-            </Card.Text>
-            <Button variant="primary">COMPRAR</Button>
-          </Card.Body>
-        </Card>
-        </div>
+      <h2 className="display-1 row justify-content-center text-center m-4">
+        PRODUCTOS
+      </h2>
+        <div className="row justify-content-center p-4 gap-4">
+          <Card style={{ width: '18rem' }} className="col-6">
+            <Card.Img variant="top" src={product_01} />
+            <Card.Body>
+              <Card.Title>Aceite Motul</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content ljljl.
+              </Card.Text>
+              <Button variant="primary">COMPRAR</Button>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }} className="col-6">
+            <Card.Img variant="top" src={product_01} />
+            <Card.Body>
+              <Card.Title>Aceite Motul</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content ljljl.
+              </Card.Text>
+              <Button variant="primary">COMPRAR</Button>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }} className="col-6">
+            <Card.Img variant="top" src={product_01} />
+            <Card.Body>
+              <Card.Title>Aceite Motul</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content ljljl.
+              </Card.Text>
+              <Button variant="primary">COMPRAR</Button>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }} className="col-6">
+            <Card.Img variant="top" src={product_01} />
+            <Card.Body>
+              <Card.Title>Aceite Motul</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content ljljl.
+              </Card.Text>
+              <Button variant="primary">COMPRAR</Button>
+            </Card.Body>
+          </Card>
+          </div>
     </>
   )
 }
