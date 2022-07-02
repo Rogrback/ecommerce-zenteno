@@ -1,12 +1,9 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-// import imagen01 from '../img/imagen1.jpg';
-import imagen011 from '../img/imagen11.jpg';
-// import imagen02 from '../img/imagen2.jpg';
-import imagen022 from '../img/imagen22.jpg';
-// import imagen03 from '../img/imagen3.jpg';
-import imagen033 from '../img/imagen33.jpg';
-// import imagen04 from '../img/imagen4.jpg';
+import imagen01 from '../img/imagen1.jpg';
+import imagen02 from '../img/imagen2.jpg';
+import imagen03 from '../img/imagen3.jpg';
+import imagen04 from '../img/imagen4.jpg';
 
 import '../styles/carousel.css'
 
@@ -20,7 +17,7 @@ export const CarouselProducts = () => {
           <Carousel.Item>
             <img
               className="d-block w-100 h-50"
-              src={imagen011}
+              src={imagen01}
               alt="First slide"
             />
             <Carousel.Caption style={{ background: 'linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50))' }}    >
@@ -31,7 +28,7 @@ export const CarouselProducts = () => {
           <Carousel.Item >
             <img
               className="d-block w-100 h-50"
-              src={imagen022}
+              src={imagen02}
               alt="Second slide"
             />
             <Carousel.Caption style={{ background: 'linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50))' }}    >
@@ -42,7 +39,7 @@ export const CarouselProducts = () => {
           <Carousel.Item>
             <img
               className="d-block w-100 h-50"
-              src={imagen033}
+              src={imagen03}
               alt="Third slide"
             />
             <Carousel.Caption style={{ background: 'linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50))' }}    >
