@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
-
 import { DetailProduct } from './components/DetailProduct';
 import { Routes, Route, BrowserRouter as Router} from 'react-router-dom'
 
