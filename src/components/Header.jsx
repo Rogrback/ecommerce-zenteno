@@ -24,27 +24,26 @@ export const Header = () => {
               className="me-auto my-2 my-lg-0 mx-100"
               navbarScroll
             >
-              <Link to="/">
-                <Nav.Link
-                  href="#action1"
-                  className='text-dark fs-4'>
-                  Inicio
-                </Nav.Link>
-              </Link>
-              <Link to="/">
-                <Nav.Link
-                  href="#action1"
-                  className='text-dark fs-4'>
-                  Productos
-                </Nav.Link>
-              </Link>
-              <Link to="/">
-                <Nav.Link
-                  href="#action1"
-                  className='text-dark fs-4'>
-                  Contacto
-                </Nav.Link>
-              </Link>
+              <Nav.Link as = {Link}
+                to="/"
+                className='text-dark fs-4'>
+                Inicio
+              </Nav.Link>
+              <Nav.Link as = {Link}
+                to="/productos"
+                className='text-dark fs-4'>
+                Productos
+              </Nav.Link>
+              <Nav.Link as = {Link}
+                to="/contacto"
+                className='text-dark fs-4'>
+                Contacto
+              </Nav.Link>
+              <Nav.Link as = {Link}
+                to="/registro"
+                className='text-dark fs-4'>
+                Registrarse
+              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
