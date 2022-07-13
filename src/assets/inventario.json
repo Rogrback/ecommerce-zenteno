@@ -1,0 +1,74 @@
+[
+    {
+        "id":"1",
+        "nombre":"GALON MOTUL 5W30 FULL SINTETICO",
+        "precio_compra":"150",
+        "precio_venta":"170",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"10"
+    },
+    {
+        "id":"2",
+        "nombre":"BOTELLA MOTUL 5W30 FULL SINTETICO",
+        "precio_compra":"40",
+        "precio_venta":"47",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"20"
+    },
+    {
+        "id":"3",
+        "nombre":"GALON MOTUL 5W30 SEMISINTETICO",
+        "precio_compra":"110",
+        "precio_venta":"128",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"8"
+    },
+    {
+        "id":"4",
+        "nombre":"BOTELLA MOTUL 5W30 SEMISINTETICO",
+        "precio_compra":"22",
+        "precio_venta":"34",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"12"
+    },
+    {
+        "id":"5",
+        "nombre":"GALON MOTUL 10W30 SEMISINTETICO",
+        "precio_compra":"110",
+        "precio_venta":"128",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"6"
+    },
+    {
+        "id":"6",
+        "nombre":"BOTELLA MOTUL 10W30 SEMISINTETICO",
+        "precio_compra":"22",
+        "precio_venta":"32",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"14"
+    },
+    {
+        "id":"7",
+        "nombre":"GALON MOTUL 10W40 SEMISINTETICO",
+        "precio_compra":"110",
+        "precio_venta":"128",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"8"
+    },
+    {
+        "id":"8",
+        "nombre":"BOTELLA MOTUL 10W40 SEMISINTETICO",
+        "precio_compra":"22",
+        "precio_venta":"32",
+        "marca":"MOTUL",
+        "categoria":"ACEITE",
+        "stock":"6"
+    }
+]
