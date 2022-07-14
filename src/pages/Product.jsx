@@ -1,11 +1,13 @@
 import React from 'react'
-import { DetailProduct } from '../components/DetailProduct'
-
+import { ListProduct } from '../components/ListProduct'
+import { ProductProvider } from '../context/ProductContext'
 
 export const Product = () => {
   return (
     <div>
-        <DetailProduct/>
+        <ProductProvider>
+          <ListProduct/>
+        </ProductProvider>        
     </div>
   )
 }
