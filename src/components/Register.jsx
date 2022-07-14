@@ -5,10 +5,8 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import useForm from '../Hooks/useForm';
-// import axios from 'axios'
 
 export const Register = () => {
-
 
     const [cliente, setCliente] = useState({
         pais: '',
@@ -35,9 +33,9 @@ export const Register = () => {
         }, 2000)
     }, [])
 
-    const sendData = (info) => {
-        console.log('Esta es mi data final', info)
-    }
+    // const sendData = (info) => {
+    //     console.log('Esta es mi data final', info)
+    // }
 
     const { input, handleInputChange, handleSubmit } = useForm(handleShow, cliente)
 
