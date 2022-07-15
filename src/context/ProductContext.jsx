@@ -6,7 +6,8 @@ const ProductContext = createContext()
 function ProductProvider (props) {
     const [listProducts, setListProducts] = useState([])
     const [loading, setLoading] = useState(true)
-    const [selectProduct, setSelectProduct] = useState({})
+    const [selectedProduct, setSelectedProduct] = useState({})
+    const [search, setSearch] = useState('')
 
     useEffect(() => {   
         setTimeout(() => {  
@@ -17,9 +18,11 @@ function ProductProvider (props) {
 
     const value = {
         listProducts,
-        selectProduct,
-        setSelectProduct,
-        loading
+        selectedProduct,
+        setSelectedProduct,
+        loading,
+        search,
+        setSearch        
     }
 
     return (

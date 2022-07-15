@@ -16,7 +16,6 @@ export const Register = () => {
     })
 
     const [show, setShow] = useState(false);
-  
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -33,75 +32,61 @@ export const Register = () => {
         }, 2000)
     }, [])
 
-    // const sendData = (info) => {
-    //     console.log('Esta es mi data final', info)
-    // }
-
     const { input, handleInputChange, handleSubmit } = useForm(handleShow, cliente)
-
 
     return (
         <>
-        <Form className='p-5'>
-            <Form.Select aria-label="Default select example" className='mb-4' onChange={handleInputChange} value={input.pais} name='pais'>
-                <option value=''>Elige tu pais</option>
-                <option value='Colombia'>Colombia</option>
-                <option value='Mexico'>Mexico</option>
-                <option value='Peru'>Peru</option>
-            </Form.Select>
-            {/*  
-            <Form.Select aria-label="Default select example" className='mb-4' >
-                <option htmlFor='' onChange={handleInputChange} value={input.pais}>Elige tu pais</option>
-                <option htmlFor='Colombia' onChange={handleInputChange} value={input.pais}>Colombia</option>
-                <option htmlFor='Mexico' onChange={handleInputChange} value={input.pais}>Mexico</option>
-                <option htmlFor='Peru' onChange={handleInputChange} value={input.pais}>Peru</option>
-            </Form.Select>
-            */ }
-            
-            <InputGroup className="mb-3">
-                <InputGroup.Text id="basic-addon1" htmlFor='usuario'>@</InputGroup.Text>
-                <FormControl
-                    placeholder="Username"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    onChange={handleInputChange}
-                    value={input.usuario}
-                />
-            </InputGroup>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <label htmlFor='email'>Email</label>
-                <Form.Control type="email" placeholder="Enter email" onChange={handleInputChange}
-                    value={input.correo} />
-                <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <label htmlFor='password'>Password</label>
-                <Form.Control type="password" placeholder="Password" onChange={handleInputChange}
-                    value={input.password} />
-            </Form.Group>
-            <Button variant="primary" type="submit" onClick={handleSubmit}>
-                Submit
-            </Button>
-        </Form>
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Pais: {input.pais}</Modal.Body>
-          <Modal.Body>Usuario: {input.usuario}</Modal.Body>
-          <Modal.Body>Correo: {input.correo}</Modal.Body>
-          <Modal.Body>Password: {input.password}</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
+            <Form className='p-5'>
+                <Form.Select aria-label="Default select example" className='mb-4' onChange={handleInputChange} value={input.pais} name='pais'>
+                    <option value=''>Elige tu pais</option>
+                    <option value='Colombia'>Colombia</option>
+                    <option value='Mexico'>Mexico</option>
+                    <option value='Peru'>Peru</option>
+                </Form.Select>
+                <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon1" htmlFor='usuario'>@</InputGroup.Text>
+                    <FormControl
+                        placeholder="Username"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        onChange={handleInputChange}
+                        value={input.usuario}
+                    />
+                </InputGroup>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <label htmlFor='email'>Email</label>
+                    <Form.Control type="email" placeholder="Enter email" onChange={handleInputChange}
+                        value={input.correo} />
+                    <Form.Text className="text-muted">
+                        We'll never share your email with anyone else.
+                    </Form.Text>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <label htmlFor='password'>Password</label>
+                    <Form.Control type="password" placeholder="Password" onChange={handleInputChange}
+                        value={input.password} />
+                </Form.Group>
+                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                    Submit
+                </Button>
+            </Form>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Pais: {input.pais}</Modal.Body>
+                <Modal.Body>Usuario: {input.usuario}</Modal.Body>
+                <Modal.Body>Correo: {input.correo}</Modal.Body>
+                <Modal.Body>Password: {input.password}</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </>
     )
 }
