@@ -24,7 +24,7 @@ export const ListProduct = () => {
             } else if (product.nombre.toLowerCase().includes(context.search.toLowerCase())) {
               return product
             }
-            return product
+            return null
           }).map((product, index) => (
             <Card
               style={{ width: '18rem' }}
