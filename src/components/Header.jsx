@@ -1,52 +1,40 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import imageZenteno from '../img/logos/logo_zenteno.png';
 
 export const Header = () => {
   return (
     <>
-      <Navbar expand="lg" style={{ backgroundColor: '#1e90ff' }}>
-        <Container fluid>
-          <Navbar.Brand href="#">
+      <div className="container">
+        <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom mx-100">
+          <Link to='/'>
             <img
-              src={imageZenteno}
-              className='w-100 h-75'
-              alt='Logo' />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0 mx-100"
-              navbarScroll
-            >
-              <Nav.Link as = {Link}
-                to="/"
-                className='text-dark fs-4'>
-                Inicio
-              </Nav.Link>
-              <Nav.Link as = {Link}
-                to="/productos"
-                className='text-dark fs-4'>
-                Productos
-              </Nav.Link>
-              <Nav.Link as = {Link}
-                to="/contacto"
-                className='text-dark fs-4'>
-                Contacto
-              </Nav.Link>
-              <Nav.Link as = {Link}
-                to="/registro"
-                className='text-dark fs-4'>
-                Registrarse
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+            src={imageZenteno}
+            className='w-100 h-75'
+            alt='Logo' />
+          </Link>
+          <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <Link to='/'>
+              Inicio
+              </Link>
+            </li>
+            <li>
+              <Link to='/productos'>
+              Productos
+              </Link>
+            </li>
+          </ul>
+          <div className="col-md-3 text-end">
+            <Link to='/login'>
+              <button type="button" className="btn btn-outline-primary me-2">Login</button>
+            </Link>
+            <Link to='/signup'>
+              <button type="button" className="btn btn-primary">Sign-up</button>
+            </Link>
+          </div>
+        </header>
+      </div>
     </>
 
   )
