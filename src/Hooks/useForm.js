@@ -13,16 +13,16 @@ function useForm(callback, defaults) {
     const [input, setInput] = useState(defaults) //Guardo los valores del formulario
 
     //Cargar los valores por defecto
-    useEffect(()=>{
-        setInput({...defaults}) //spread operator
-    },[defaults])
+    // useEffect(()=>{
+    //     setInput({...defaults}) //spread operator
+    // },[])
 
     const handleInputChange = (event) => {
         const { name, value } = event.target
         // Equivalente a:
         // const name = event.target.name
         // const value = event.target.value
-        console.log(name, value)
+        // console.log(name, value)
         setInput({...input, [name]: value}) //actualizo la data
     }
 

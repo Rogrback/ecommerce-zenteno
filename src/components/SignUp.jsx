@@ -3,7 +3,6 @@ import axios from 'axios'
 import logoZ from '../img/logos/logoZ.png'
 import useForm from '../Hooks/useForm'
 
-
 export const SignUp = () => {
     const navigate = useNavigate()
     const sendData = (data) => {
