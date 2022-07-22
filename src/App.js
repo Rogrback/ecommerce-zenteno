@@ -13,25 +13,25 @@ import { Logout } from './components/Logout';
 
 export const App = () => {
   const { isAuth } = useContext(AuthContext)
-  return (
-    <Router>
-      <Header/>
-      <Routes>
-        <Route path="/" element = { <Home /> } />
-        <Route path="/productos" element={ <Product/> } />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route
-        path='/secret'
-        element={
-          <Protected isLoggedIn={isAuth}>
-            <Secret />
-          </Protected>
-        }
-        />
-      <Route path='/logout' element={<Logout />} />
-      </Routes>     
-    </Router>
+  return (    
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path="/" element = { <Home /> } />
+          <Route path="/productos" element={ <Product/> } />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route
+            path='/secret'
+            element={
+              <Protected isLoggedIn={isAuth}>
+                <Secret />
+              </Protected>
+          }
+          />
+        <Route path='/logout' element={<Logout />} />
+        </Routes>     
+      </Router>
   );
 }
 

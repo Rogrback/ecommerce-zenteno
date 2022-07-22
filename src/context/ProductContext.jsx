@@ -29,6 +29,7 @@ function ProductProvider (props) {
         <ProductContext.Provider value={value} {...props} />   
     )
 }
+
 const useProductContext = () => {
     const context = useContext(ProductContext)
     return context
