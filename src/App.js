@@ -10,6 +10,8 @@ import { Protected } from './hoc/Protected';
 import { AuthContext } from './context/AuthContext';
 import { Secret } from './components/Secret';
 import { Logout } from './components/Logout';
+import { DetailProduct } from './components/DetailProduct';
+
 
 export const App = () => {
   const { isAuth } = useContext(AuthContext)
@@ -21,6 +23,7 @@ export const App = () => {
           <Route path="/productos" element={ <Product/> } />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
+          <Route path='/product/:id' element={<DetailProduct />} />
           <Route
             path='/secret'
             element={

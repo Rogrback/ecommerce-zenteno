@@ -16,6 +16,7 @@ export const Login = () => {
         if (response.status === 200) {console.log(response.data)
           loginUser(response.data.token)
           navigate('/')
+          console.log(response.data)
         }
       }).catch((error) => {
         console.log(error)

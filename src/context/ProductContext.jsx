@@ -1,20 +1,27 @@
 import { createContext, useState, useEffect, useContext } from 'react'
-import productos from '../assets/inventario.json'
+import axios from 'axios'
+// import productos from '../assets/inventario.json'
 
 const ProductContext = createContext()
 
-function ProductProvider (props) {
+function ProductProvider(props) {
     const [listProducts, setListProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const [selectedProduct, setSelectedProduct] = useState({})
     const [search, setSearch] = useState('')
 
-    useEffect(() => {   
-        setTimeout(() => {  
-            setListProducts(productos)
-            setLoading(false)
-        }, [2000])
-    }, [])      
+    useEffect(() => {
+         axios.get('https://ecomerce-master.herokuapp.com/api/v1/item')
+            .then((response) => {
+                if (response.status === 200) {
+                    setListProducts(response.data)
+                    setLoading(false) 
+                }
+            }).catch((error) => {
+                console.log(error)
+            })        
+                   
+    }, [])
 
     const value = {
         listProducts,
@@ -22,11 +29,11 @@ function ProductProvider (props) {
         setSelectedProduct,
         loading,
         search,
-        setSearch        
+        setSearch
     }
 
     return (
-        <ProductContext.Provider value={value} {...props} />   
+        <ProductContext.Provider value={value} {...props} />
     )
 }
 
@@ -34,8 +41,8 @@ const useProductContext = () => {
     const context = useContext(ProductContext)
     return context
 }
-  
-export{
-  ProductProvider,
-  useProductContext
+
+export {
+    ProductProvider,
+    useProductContext
 }

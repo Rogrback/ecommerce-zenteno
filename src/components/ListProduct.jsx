@@ -1,9 +1,9 @@
 import { useProductContext } from '../context/ProductContext'
 import { Link } from 'react-router-dom';
-import product_01 from '../img/product01.jpg'
+// import product_01 from '../img/product01.jpg'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import {DetailProduct} from './DetailProduct'
+// import {DetailProduct} from './DetailProduct'
 import { SearchProduct } from './SearchProduct';
 
 export const ListProduct = () => {
@@ -21,7 +21,7 @@ export const ListProduct = () => {
           : context.listProducts.filter(product => {
             if (context.search === '') {
               return product
-            } else if (product.nombre.toLowerCase().includes(context.search.toLowerCase())) {
+            } else if (product.product_name.toLowerCase().includes(context.search.toLowerCase())) {
               return product
             }
             return null
@@ -34,15 +34,13 @@ export const ListProduct = () => {
                 context.setSelectedProduct(product)
               }}
             >
-              <Card.Img variant="top" src={product_01} />
+              <Card.Img variant="top" src={product.image} />
               <Card.Body>
-                <Card.Title>{product.nombre}</Card.Title>
+                <Card.Title>{product.product_name}</Card.Title>
                 <Card.Text>
                   {product.marca}
                 </Card.Text>
-                <Link
-                  to="/product/{product.id}"
-                  element = { <DetailProduct idProduct={product.id} /> }>
+                <Link to={`/product/${product._id}`} >
                   <Button variant="primary">COMPRAR</Button>
                 </Link>
               </Card.Body>

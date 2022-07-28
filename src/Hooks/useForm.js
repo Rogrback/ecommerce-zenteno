@@ -5,7 +5,7 @@
 // 3. Siempre debo usar algún hook de React (useState, useEffect, useRef, etc.)
 // 4. Deben de ser reutilizables, no para casos muy especificos.
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 // callback: función que se va a encargar de procesar el envio del form
 // defaults: valores por defecto del formulario
