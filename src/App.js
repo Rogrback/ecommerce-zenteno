@@ -4,12 +4,12 @@ import { Header } from './components/Header';
 import { Home } from './pages/Home';
 import { Routes, Route, BrowserRouter as Router} from 'react-router-dom'
 import { Product } from './pages/Product';
-import { SignUp } from './components/SignUp';
-import { Login } from './components/Login';
+import { SignUp } from './pages/SignUp';
+import { Login } from './pages/Login';
 import { Protected } from './hoc/Protected';
 import { AuthContext } from './context/AuthContext';
 import { Secret } from './components/Secret';
-import { Logout } from './components/Logout';
+import { Logout } from './pages/Logout';
 import { DetailProduct } from './components/DetailProduct';
 
 
