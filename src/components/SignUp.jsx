@@ -35,7 +35,7 @@ export const SignUp = () => {
         <main className='form-signin w-100 m-auto'>
             <form onSubmit={handleSubmit}>
                 <img className='mb-4' src={logoZ} alt='' width='72' height='57' />
-                <h1 className='h3 mb-3 fw-normal'>Please create an account</h1>
+                <h1 className='h3 mb-3 fw-normal'>Crear cuenta</h1>
 
                 <div className='form-floating'>
                     <input
@@ -47,78 +47,77 @@ export const SignUp = () => {
                         value={input.first_name}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor='first_name'>What's your name?</label>
+                    <label htmlFor='first_name'>Nombres</label>
                 </div>
 
                 <div className='form-floating'>
                     <input
                         type='text'
-                        className='form-control'
+                        className='form-control mt-2'
                         id='last_name'
                         name='last_name'
                         placeholder='Doe'
                         value={input.last_name}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor='last_name'>What's your last name?</label>
+                    <label htmlFor='last_name'>Apellidos</label>
                 </div>
 
                 <div className='form-floating'>
                     <select
-                        className='form-select'
+                        className='form-select mt-2'
                         id='gender'
                         name='gender'
                         value={input.gender}
                         onChange={handleInputChange}
                     >
-                        <option value=''>Choose...</option>
-                        <option value='M'>Male</option>
-                        <option value='F'>Female</option>
+                        <option value=''>Elegir...</option>
+                        <option value='M'>Hombre</option>
+                        <option value='F'>Mujer</option>
                     </select>
-                    <label htmlFor='gender'>Gender</label>
+                    <label htmlFor='gender'>Género</label>
                 </div>
 
                 <div className='form-floating'>
                     <input
                         type='email'
-                        className='form-control'
+                        className='form-control mt-2'
                         id='email'
                         name='email'
                         placeholder='name@example.com'
                         value={input.email}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor='email'>Email address</label>
+                    <label htmlFor='email'>Correo</label>
                 </div>
 
                 <div className='form-floating'>
                     <input
                         type='password'
-                        className='form-control'
+                        className='form-control mt-2'
                         id='password'
                         name='password'
                         placeholder='Password'
                         value={input.password}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor='password'>Password</label>
+                    <label htmlFor='password'>Contraseña</label>
                 </div>
 
                 <div className='form-floating'>
                     <input
                         type='password'
-                        className='form-control'
+                        className='form-control mt-2'
                         id='password_confirm'
                         name='password_confirm'
                         placeholder='Password'
                         value={input.password_confirm}
                         onChange={handleInputChange}
                     />
-                    <label htmlFor='password_confirm'>Repeat your Password</label>
+                    <label htmlFor='password_confirm'>Repite tu contraseña</label>
                 </div>
 
-                <button className='w-100 btn btn-lg btn-primary' type='submit'>Sign in</button>
-                <p className='mt-5 mb-3 text-muted'>© 2017–2022</p>
+                <button className='w-100 btn btn-lg btn-primary' type='submit'>Registrarse</button>
             </form>
         </main>
     )

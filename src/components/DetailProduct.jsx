@@ -8,13 +8,6 @@ export const DetailProduct = () => {
   const [product, setProduct] = useState([])
   const [loading, setLoading] = useState(true)
 
-  // console.log(id);
-
-  // context.listProducts.map(product => (
-  //   console.log(product)
-  // ))
-  // const product = context.listProducts
-  // if(product._id === {id}) return product
   useEffect(() => {
     axios.get(`https://ecomerce-master.herokuapp.com/api/v1/item/${id}`)
        .then((response) => {
@@ -36,7 +29,7 @@ export const DetailProduct = () => {
           style={{ width: '18rem' }}
           className="col-6 pt-3"
         >
-          <Card.Img variant="top" src={product.image} />
+          <Card.Img variant="top" src={product.image} className="p-2" />
           <Card.Body>
             <Card.Title>{product.product_name}</Card.Title>
             <Card.Text>

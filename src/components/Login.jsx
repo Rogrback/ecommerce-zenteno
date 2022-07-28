@@ -32,7 +32,7 @@ export const Login = () => {
     <main className='form-signin w-100 m-auto'>
       <form onSubmit={handleSubmit}>
         <img className='mb-4' src={logoZ} alt='' width='72' height='57' />
-        <h1 className='h3 mb-3 fw-normal'>Please sign in</h1>
+        <h1 className='h3 mb-3 fw-normal'>Inicie sesión</h1>
 
         <div className='form-floating'>
           <input
@@ -44,7 +44,7 @@ export const Login = () => {
             value={input.email}
             onChange={handleInputChange}
           />
-          <label htmlFor='email'>Email address</label>
+          <label htmlFor='email'>Correo</label>
         </div>
 
         <div className='form-floating'>
@@ -57,10 +57,10 @@ export const Login = () => {
             value={input.password}
             onChange={handleInputChange}
           />
-          <label htmlFor='password'>Password</label>
+          <label htmlFor='password'>Contraseña</label>
         </div>
 
-        <button className='w-100 btn btn-lg btn-primary' type='submit'>Sign in</button>
+        <button className='w-100 btn btn-lg btn-primary' type='submit'>Ingresar</button>
         <p className='mt-5 mb-3 text-muted'>© 2017–2022</p>
       </form>
     </main>

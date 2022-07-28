@@ -22,7 +22,7 @@ export const SearchProduct = () => {
           <Col><Form.Control
             type="search"
             placeholder="Buscar producto"
-            className="me-2 col-8"
+            className="me-2 col-8 fs-2"
             aria-label="Search"
             onChange={e => onAddChange(e)}
           />
