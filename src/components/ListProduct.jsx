@@ -27,6 +27,7 @@ export const ListProduct = () => {
             return null
           }).map((product, index) => (
             <Card
+              border="primary"
               style={{ width: '18rem' }}
               key={index}
               className="col-6 pt-3"
@@ -41,7 +42,7 @@ export const ListProduct = () => {
                   {product.marca}
                 </Card.Text>
                 <Link to={`/product/${product._id}`} >
-                  <Button variant="primary">COMPRAR</Button>
+                  <Button variant="primary">VER DETALLES</Button>
                 </Link>
               </Card.Body>
             </Card>
