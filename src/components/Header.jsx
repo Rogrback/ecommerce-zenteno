@@ -15,12 +15,12 @@ export const Header = () => {
           </Link>
           <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <Link to='/'>
+              <Link to='/' className='d-inline p-2 nav-link active fs-2'>
               Inicio
               </Link>
             </li>
             <li>
-              <Link to='/productos'>
+              <Link to='/productos' className='d-inline p-2 nav-link active fs-2'>
               Productos
               </Link>
             </li>
